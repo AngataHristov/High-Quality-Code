@@ -1,0 +1,144 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Extensions</name>
+    </assembly>
+    <members>
+        <member name="T:StringExtensions">
+            <summary>
+            File extension class
+            </summary>
+        </member>
+        <member name="M:StringExtensions.ToMd5Hash(System.String)">
+            <summary>
+            Converts an inputed string to coresponding hash representation
+            </summary>
+            <param name="input">inputed string</param>
+            <returns>hash representation</returns>
+        </member>
+        <member name="M:StringExtensions.ToBoolean(System.String)">
+            <summary>
+            Converts an inputed string to coresponding Boolean
+            </summary>
+            <remarks>Returns True if it meets the predefined Value</remarks>
+            <remarks>Returns False if it doesn't meet the predefined Value</remarks>
+            <param name="input">String for converting</param>
+            <returns>True or False</returns>
+        </member>
+        <member name="M:StringExtensions.ToShort(System.String)">
+            <summary>
+            Converts the inputed string to coresponding 16-bit integer representation
+            </summary>
+            <param name="input">String for converting</param>
+            <returns>16-bit integer or exeption</returns>
+            <exception cref="T:System.ArgumentException">If the string cannot be converted, sends this Exception</exception>
+        </member>
+        <member name="M:StringExtensions.ToInteger(System.String)">
+            <summary>
+            Converts the inputed string to coresponding 32-bit integer representation
+            </summary>
+            <param name="input">String for converting</param>
+            <returns>32-bit integer or exeption</returns>
+            <exception cref="T:System.ArgumentException">If the string cannot be converted, sends this Exception</exception>
+        </member>
+        <member name="M:StringExtensions.ToLong(System.String)">
+            <summary>
+            Converts the inputed string to coresponding 64-bit integer representation
+            </summary>
+            <param name="input">String for converting</param>
+            <returns>64-bit integer or exeption</returns>
+            <exception cref="T:System.ArgumentException">If the string cannot be converted, sends this Exception</exception>
+        </member>
+        <member name="M:StringExtensions.ToDateTime(System.String)">
+            <summary>
+            Converts the inputed string to coresponding DateTime representation
+            </summary>
+            <remarks>If the string can be parsed, It returns a valid DateTime</remarks>
+            <param name="input">String for processing</param>
+            <returns>DateTime or exeption</returns>
+            <exception cref="T:System.ArgumentException">If the string cannot be converted, sends this Exception</exception>
+            <exception cref="T:System.NotSupportedException">If the converted DateTime is not supported, sends this Exception</exception>
+        </member>
+        <member name="M:StringExtensions.CapitalizeFirstLetter(System.String)">
+            <summary>
+            Capitalizes the first letter of predefined string
+            </summary>
+            <remarks>If the predefined string is empty or null, the result will be the same</remarks>
+            <param name="input">String for processing</param>
+            <returns>The inputed string with first letter capitalized</returns>
+        </member>
+        <member name="M:StringExtensions.GetStringBetween(System.String,System.String,System.String,System.Int32)">
+            <summary>
+            Extracts string between two strings
+            </summary>
+            <remarks>If the 'start' and 'end' strings are not found, returns empty</remarks>
+            <param name="input">String for processing</param>
+            <param name="startString">String to start extracting from</param>
+            <param name="endString">String to stop extracting to</param>
+            <param name="startFrom">Set the starting position for processing</param>
+            <returns>Extracted string</returns>
+        </member>
+        <member name="M:StringExtensions.ConvertCyrillicToLatinLetters(System.String)">
+            <summary>
+            Converts cyrellic to latin letters
+            </summary>
+            <param name="input">String for processing</param>
+            <returns>The predefined string with converted cyrellic to latin letters</returns>
+        </member>
+        <member name="M:StringExtensions.ConvertLatinToCyrillicKeyboard(System.String)">
+            <summary>
+            Converts latin to cyrellic letters
+            </summary>
+            <param name="input">String for processing</param>
+            <returns>The predefined string with converted latin to cyrellic letters</returns>
+        </member>
+        <member name="M:StringExtensions.ToValidUsername(System.String)">
+            <summary>
+            Converts a given username to one, containing only valid symbols
+            </summary>
+            <remarks>Username is converted to latin leters</remarks>
+            <param name="input">String for processing</param>
+            <returns>Converted username</returns>
+        </member>
+        <member name="M:StringExtensions.ToValidLatinFileName(System.String)">
+            <summary>
+            Converts a given file name to valid, latin name
+            </summary>
+            <remarks>File name is converted to latin leters</remarks>
+            <param name="input">String for processing</param>
+            <returns>Converted file name</returns>
+        </member>
+        <member name="M:StringExtensions.GetFirstCharacters(System.String,System.Int32)">
+            <summary>
+            Extracts the first characters from predefined string
+            </summary>
+            <param name="input">String for processing</param>
+            <param name="charsCount">Number of chars to get</param>
+            <returns>Requested amount of characters</returns>
+        </member>
+        <member name="M:StringExtensions.GetFileExtension(System.String)">
+            <summary>
+            Extracts the file extension from given filename
+            </summary>
+            <remarks>If the file is empty or Null or the file's
+             name is unpropperly labeled, returns Empty string</remarks>
+            <param name="fileName">filename</param>
+            <returns>file extension as string</returns>
+        </member>
+        <member name="M:StringExtensions.ToContentType(System.String)">
+            <summary>
+            Convert a given file extension to content type
+            </summary>
+            <remarks>Default content type: 'application/octet-stream'</remarks>
+            <param name="fileExtension"> file extension for processing</param>
+            <returns>File extension converted to content type, as string</returns>
+        </member>
+        <member name="M:StringExtensions.ToByteArray(System.String)">
+            <summary>
+            Converts an inputed string to coresponding Byte Array representation
+            </summary>
+            <param name="input">String for processing</param>
+            <returns>Corresponding Byte Array</returns>
+        </member>
+    </members>
+</doc>
